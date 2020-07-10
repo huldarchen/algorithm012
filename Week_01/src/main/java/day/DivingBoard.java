@@ -8,13 +8,20 @@ package day;
  * @date 2020/7/8
  */
 public class DivingBoard {
+    /**
+     * 时间复杂度O(n)
+     * 空间复杂度O(1)
+     */
     public int[] divingBoardByDiff(int shorter, int longer, int k) {
+        //边界条件
         if (k == 0) {
             return new int[0];
         }
+        //特殊情况
         if (shorter == longer) {
             return new int[]{longer * k};
         }
+
         int diff = longer - shorter;
         int[] result = new int[k + 1];
         for (int i = 0; i <= k; i++) {

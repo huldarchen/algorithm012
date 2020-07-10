@@ -9,6 +9,8 @@ package leetcode;
 public class MaxArea {
 
     /**
+     * 时间复杂度O(n)
+     * 空间复杂度O(1)
      * 双指针夹逼
      */
     public int maxAreaUseTwoIndex(int[] nums) {
@@ -21,6 +23,8 @@ public class MaxArea {
     }
 
     /**
+     * 时间复杂度O(n^2)
+     * 空间复杂度O(1)
      * 枚举法,两层循环
      */
     public int maxAreaUseTwoLoop(int[] nums) {

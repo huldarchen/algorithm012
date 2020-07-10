@@ -10,7 +10,8 @@ package leetcode;
 public class MergeTwoArray {
     /**
      * 从尾部进行遍历,添加到长数组的尾部
-     *
+     * 时间复杂度O(n)
+     * 空间复杂度O(1)
      * @param nums1 第一个数组
      * @param m     第一个数组的非零长度
      * @param nums2 第二个数组
@@ -27,7 +28,8 @@ public class MergeTwoArray {
     /**
      * 从尾部进行遍历,添加到长数组的尾部
      * note:最后不需要进行copy
-     *
+     * 时间复杂度O(n)
+     * 空间复杂度O(1)
      * @param nums1 第一个数组
      * @param m     第一个数组的非零长度
      * @param nums2 第二个数组

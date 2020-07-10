@@ -12,6 +12,8 @@ package leetcode;
 public class RemoveDuplicates {
     /**
      * 双指针
+     * 时间复杂度O(n)
+     * 空间复杂度O(1)
      * 弊端:在完全没有重复的时候也要进行复制一遍
      */
     public int removeDuplicatesUseIndex(int[] nums) {
