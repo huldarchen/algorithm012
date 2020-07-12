@@ -26,8 +26,6 @@ public class SwapPairs {
         return next;
     }
 
-
-
     static class ListNode{
         int val;
         ListNode next;
