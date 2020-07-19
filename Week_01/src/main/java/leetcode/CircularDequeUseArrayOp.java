@@ -30,7 +30,7 @@ public class CircularDequeUseArrayOp {
         if (isFull()) {
             return false;
         }
-        front = (front + capacity - 1) % capacity;
+        front = (front - 1 + capacity) % capacity;
         arr[front] = value;
         return true;
     }
@@ -40,7 +40,7 @@ public class CircularDequeUseArrayOp {
         if (isFull()) {
             return false;
         }
-        rear = (rear + 1 + capacity) % capacity;
+        rear = (rear + 1) % capacity;
         arr[rear] = value;
         return true;
     }
@@ -59,7 +59,7 @@ public class CircularDequeUseArrayOp {
         if (isEmpty()) {
             return false;
         }
-        rear = (rear + capacity - 1) % capacity;
+        rear = (rear - 1 + capacity) % capacity;
         return true;
     }
 
@@ -76,7 +76,7 @@ public class CircularDequeUseArrayOp {
         if (isEmpty()) {
             return  -1;
         }
-        return arr[(rear + capacity -1) % capacity];
+        return arr[(rear - 1 + capacity) % capacity];
     }
 
     /** Checks whether the circular deque is empty or not. */
