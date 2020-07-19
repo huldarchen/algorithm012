@@ -12,6 +12,7 @@ import java.util.List;
  * @date 2020/7/19
  */
 public class TreeTraverse {
+
     /** 中序遍历 */
     public List<Integer> inorderTraversal(BinaryTreeNode root) {
         List<Integer> result = new ArrayList<>();
@@ -31,6 +32,7 @@ public class TreeTraverse {
         inorderTraversalLoop(treeNode.right, res);
     }
 
+    /** 前序遍历 */
     public List<Integer> preorderTraversal(BinaryTreeNode root) {
         List<Integer> result = new ArrayList<>();
         preorderTraversalLoop(root, result);
@@ -46,6 +48,7 @@ public class TreeTraverse {
         preorderTraversalLoop(treeNode.right, result);
     }
 
+    /** 后序遍历 */
     public List<Integer> postOrderTraversal(BinaryTreeNode root) {
         List<Integer> result = new ArrayList<>();
         postOrderTraversalLoop(root, result);
