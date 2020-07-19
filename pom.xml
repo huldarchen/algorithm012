@@ -8,6 +8,17 @@
     <artifactId>algorithm012</artifactId>
     <version>12</version>
 
+    <modules>
+        <module>Week_01</module>
+        <module>Week_02</module>
+        <module>Week_03</module>
+        <module>Week_04</module>
+        <module>Week_06</module>
+        <module>Week_07</module>
+        <module>Week_08</module>
+        <module>Week_09</module>
+    </modules>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>

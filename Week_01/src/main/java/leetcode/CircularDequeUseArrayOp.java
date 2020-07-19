@@ -11,6 +11,9 @@ public class CircularDequeUseArrayOp {
     private final int[] arr;
     private int front;
     private int rear;
+    /**
+     * 为什么要设置成k + 1呢?
+     */
     private final int capacity;
 
     /** Initialize your data structure here. Set the size of the deque to be k. */

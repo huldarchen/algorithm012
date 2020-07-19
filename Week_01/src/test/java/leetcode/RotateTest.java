@@ -23,10 +23,10 @@ class RotateTest {
 
     @Test
     void rotateByThreeReverse() {
-        int[] source = {-1, -100, 3, 99};
+        int[] source = {-1};
         int k = 2;
         new Rotate().rotateByThreeReverse(source,k);
-        int[] target = {3, 99, -1, -100};
+        int[] target = {-1};
         assertArrayEquals(target,source);
     }
 }
