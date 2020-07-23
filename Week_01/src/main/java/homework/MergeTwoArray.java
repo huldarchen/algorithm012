@@ -1,4 +1,4 @@
-package leetcode;
+package homework;
 
 /**
  * LeetCode-88:

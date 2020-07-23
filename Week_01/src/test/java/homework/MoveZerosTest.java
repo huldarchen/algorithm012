@@ -1,4 +1,4 @@
-package leetcode;
+package homework;
 
 import org.junit.jupiter.api.Test;
 

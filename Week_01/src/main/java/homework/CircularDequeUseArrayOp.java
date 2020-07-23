@@ -1,4 +1,4 @@
-package leetcode;
+package homework;
 
 /**
  * LeetCode-641:设计一个双端循环队列

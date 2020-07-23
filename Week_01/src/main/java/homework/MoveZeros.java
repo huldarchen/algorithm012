@@ -1,4 +1,4 @@
-package leetcode;
+package homework;
 
 /**
  * leetCode-283:
