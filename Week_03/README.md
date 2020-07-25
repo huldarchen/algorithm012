@@ -27,4 +27,45 @@
    }
    ```
 
-   
+2. python版本
+
+   ```python
+   def recursion(level, param1, param2, ...):
+   	# recursion terminator
+   	if level > MAX_LEVEL:
+   		process_result
+   		return
+   	# process logic in current level
+   	process(level, data...)
+   	# drill down
+   	self.recursion(level + 1, p1, ...)
+   	# reverse the current level status if needed
+   ```
+
+# 分支回溯
+
+```java
+public int divideConquer(Problem problem, int param1, int param2...) {
+  // recursion terminator
+  if (problem == nullptr) {
+    process_result
+    return return_result;
+  } 
+
+  // process current problem
+  subproblems = split_problem(problem, data)
+  subresult1 = divide_conquer(subproblem[0], p1)
+  subresult2 = divide_conquer(subproblem[1], p1)
+  subresult3 = divide_conquer(subproblem[2], p1)
+  ...
+
+  // merge
+  result = process_result(subresult1, subresult2, subresult3)
+  // revert the current level status
+ 
+  return 0;
+}
+```
+
+
+
