@@ -21,7 +21,7 @@ public class TopKFrequent {
         for (Integer key : hash.keySet()) {
             if (heap.size() < k) {
                 heap.add(key);
-            } else if (hash.get(key) > hash.get(heap.peek())){
+            } else if (hash.get(key) > hash.get(heap.peek())) {
                 heap.remove();
                 heap.add(key);
             }

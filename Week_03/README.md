@@ -23,7 +23,7 @@
      //3.drill down
      recursion(level + 1, params);
      
-     //4. restore current status
+     //4. reverse current status
    }
    ```
 
@@ -42,7 +42,7 @@
    	# reverse the current level status if needed
    ```
 
-# 分支回溯
+# 分支
 
 ```java
 public int divideConquer(Problem problem, int param1, int param2...) {
@@ -67,5 +67,17 @@ public int divideConquer(Problem problem, int param1, int param2...) {
 }
 ```
 
+# 回溯
 
+```python
+result = []
+def backtrack(路径, 选择列表):
+    if 满足结束条件:
+        result.add(路径)
+        return
+    for 选择 in 选择列表:
+        做选择
+        backtrack(路径, 选择列表)
+        撤销选择
+```
 
