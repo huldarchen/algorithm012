@@ -17,12 +17,15 @@ public class HasCycle {
         }
         ListNode slowPointer = head;
         ListNode fastPointer = head.next;
+
         while (slowPointer != fastPointer) {
-            slowPointer = slowPointer.next;
-            fastPointer = fastPointer.next.next;
+
             if (fastPointer == null || fastPointer.next == null) {
                 return true;
             }
+
+            slowPointer = slowPointer.next;
+            fastPointer = fastPointer.next.next;
         }
         return false;
     }
