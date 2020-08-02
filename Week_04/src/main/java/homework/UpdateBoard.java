@@ -42,7 +42,7 @@ public class UpdateBoard {
         for (int[] dir : dirs) {
             int newRow = row + dir[0];
             int newCol = col + dir[1];
-            if (newRow < 0 || newCol < 0 || newRow >= rowLength || newCol >= colLength || board[newRow][newCol] == 'E') {
+            if (newRow >= 0 && newCol >=0 && newRow < rowLength && newCol < colLength && board[newRow][newCol] == 'E') {
                 updateBoard(board, new int[]{newRow, newCol});
             }
         }

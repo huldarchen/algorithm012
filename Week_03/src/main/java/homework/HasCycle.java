@@ -27,6 +27,6 @@ public class HasCycle {
             slowPointer = slowPointer.next;
             fastPointer = fastPointer.next.next;
         }
-        return false;
+        return true;
     }
 }
