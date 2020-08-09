@@ -13,6 +13,11 @@ class BinarySearchTest {
 
     @Test
     void rotateArray() {
-        assertEquals(4, binarySearch.rotateArray(new int[]{4, 5, 6, 7, 0, 1, 2}, 0));
+        assertEquals(2, binarySearch.rotateArray(new int[]{2, 11, 15, 19, 30, 32, 61, 72, 88, 90, 95}, 15));
+    }
+
+    @Test
+    void search() {
+        binarySearch.search(new int[]{4, 5, 6, 7, 0, 1, 2}, 0);
     }
 }

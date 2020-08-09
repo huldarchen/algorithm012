@@ -59,4 +59,58 @@ public class LadderLength {
         }
         return 0;
     }
+
+    public int ladderLengthUseDoubleBFS(String beginWord, String endWord, List<String> wordList) {
+        Set<String> wordSet = new HashSet<>(wordList);
+        if (wordSet.isEmpty() || !wordSet.contains(endWord)) {
+            return 0;
+        }
+        Set<String> visited = new HashSet<>();
+
+        Set<String> beginVisited = new HashSet<>();
+        beginVisited.add(beginWord);
+
+        Set<String> endVisited = new HashSet<>();
+        endVisited.add(endWord);
+
+        int length = beginWord.length();
+        int step = 1;
+        while (!beginVisited.isEmpty() && !endVisited.isEmpty()) {
+
+            System.out.println("beginVisited => " + beginVisited);
+
+             System.out.println("  endVisited => " + endVisited + "\n");
+
+            if (beginVisited.size() > endVisited.size()) {
+                Set<String> temp = endVisited;
+                beginVisited = endVisited;
+                endVisited = temp;
+            }
+            Set<String> nextVisited = new HashSet<>();
+            for (String word : beginVisited) {
+                char[] charArray = word.toCharArray();
+                for (int i = 0; i < length; i++) {
+                    char origin = charArray[i];
+                    for (char c = 'a'; c <= 'z'; c++) {
+                        charArray[i] = c;
+                        if (c == origin) continue;
+                        String nextWord = String.valueOf(charArray);
+                        if (wordSet.contains(nextWord)) {
+                            if (endWord.equals(nextWord)) {
+                                return ++step;
+                            }
+                            if (!visited.contains(nextWord)) {
+                                visited.add(nextWord);
+                                nextVisited.add(nextWord);
+                            }
+                        }
+                    }
+                    charArray[i] = origin;
+                }
+            }
+            beginVisited = nextVisited;
+            step++;
+        }
+        return 0;
+    }
 }
