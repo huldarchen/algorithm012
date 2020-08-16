@@ -83,8 +83,8 @@ public class LadderLength {
 
             if (beginVisited.size() > endVisited.size()) {
                 Set<String> temp = endVisited;
-                beginVisited = endVisited;
-                endVisited = temp;
+                endVisited = beginVisited;
+                beginVisited = temp;
             }
             Set<String> nextVisited = new HashSet<>();
             for (String word : beginVisited) {
@@ -96,7 +96,7 @@ public class LadderLength {
                         if (c == origin) continue;
                         String nextWord = String.valueOf(charArray);
                         if (wordSet.contains(nextWord)) {
-                            if (endWord.equals(nextWord)) {
+                            if (endVisited.contains(nextWord)) {
                                 return ++step;
                             }
                             if (!visited.contains(nextWord)) {

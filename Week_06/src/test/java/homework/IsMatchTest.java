@@ -17,4 +17,10 @@ class IsMatchTest {
         assertTrue(isMatch.isMatchUseDPDownUp("abc", "ab."));
         assertTrue(isMatch.isMatchUseDPDownUp("aa", "a*"));
     }
+
+    @Test
+    void isMatchUseDPUp2Down() {
+        assertTrue(isMatch.isMatchUseDPUp2Down("abc", "ab."));
+        assertTrue(isMatch.isMatchUseDPUp2Down("aa", "a*"));
+    }
 }

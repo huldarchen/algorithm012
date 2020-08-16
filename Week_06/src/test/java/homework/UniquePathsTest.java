@@ -16,4 +16,20 @@ class UniquePathsTest {
         int actual = uniquePaths.uniquePathsUseDPDownUp(3, 2);
         assertEquals(3, actual);
     }
+
+    @Test
+    void uniquePathsUseDPUpDown() {
+        int actual = uniquePaths.uniquePathsUseDPUpDown(3, 2);
+        assertEquals(3, actual);
+    }
+
+    @Test
+    void uniquePathsWithObstaclesUseDPDownUp() {
+        int actual = uniquePaths.uniquePathsWithObstaclesUseDPDownUp(new int[][]{
+                {0, 0, 0},
+                {0, 1, 0},
+                {0, 0, 0}
+        });
+        assertEquals(2, actual);
+    }
 }

@@ -2,6 +2,8 @@ package day;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Stack;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -12,6 +14,6 @@ class FibTest {
     private final Fib fib = new Fib();
     @Test
     void fib() {
-        assertEquals(3, fib.fib(4));;
+        assertEquals(3, fib.fib(4));
     }
 }
