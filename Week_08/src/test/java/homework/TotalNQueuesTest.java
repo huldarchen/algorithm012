@@ -2,6 +2,8 @@ package homework;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -15,5 +17,16 @@ class TotalNQueuesTest {
     @Test
     void totalNQueues() {
         totalNQueues.totalNQueues(4);
+    }
+
+    @Test
+    void solveNQueens() {
+        List<List<String>> result = totalNQueues.solveNQueens(4);
+        for (List<String> rows: result) {
+            for (String row : rows) {
+                System.out.println(row);
+            }
+            System.out.println();
+        }
     }
 }
