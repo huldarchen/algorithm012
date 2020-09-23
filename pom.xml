@@ -6,6 +6,7 @@
 
     <groupId>com.huldar</groupId>
     <artifactId>algorithm012</artifactId>
+    <packaging>pom</packaging>
     <version>12</version>
 
     <modules>
@@ -17,6 +18,7 @@
         <module>Week_07</module>
         <module>Week_08</module>
         <module>Week_09</module>
+        <module>one-question-per-day</module>
     </modules>
 
     <properties>
