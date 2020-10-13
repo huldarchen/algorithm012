@@ -1,6 +1,6 @@
 package homework;
 
-import vo.NTreeNode;
+import vo.singly.NTreeNode;
 
 import java.util.*;
 

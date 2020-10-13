@@ -1,6 +1,6 @@
 package homework;
 
-import vo.ListNode;
+import vo.singly.ListNode;
 
 /**
  * LeetCode-141:判断链表是否有环

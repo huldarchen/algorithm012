@@ -1,6 +1,6 @@
 package homework;
 
-import vo.DoubleList;
+import vo.singly.DoubleList;
 
 import java.util.HashMap;
 import java.util.Map;

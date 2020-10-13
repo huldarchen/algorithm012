@@ -1,4 +1,4 @@
-package vo;
+package vo.singly;
 
 /**
  * 二叉树

@@ -1,6 +1,6 @@
 package day;
 
-import vo.ListNode;
+import vo.singly.ListNode;
 
 /**
  * TODO

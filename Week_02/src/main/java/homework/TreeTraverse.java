@@ -1,6 +1,6 @@
 package homework;
 
-import vo.BinaryTreeNode;
+import vo.singly.BinaryTreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

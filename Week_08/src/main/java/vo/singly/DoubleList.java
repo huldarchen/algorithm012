@@ -1,4 +1,4 @@
-package vo;
+package vo.singly;
 
 /**
  * 双向链表

@@ -1,9 +1,7 @@
 package day;
 
 import org.junit.jupiter.api.Test;
-import vo.ListNode;
-
-import static org.junit.jupiter.api.Assertions.*;
+import vo.singly.ListNode;
 
 /**
  * 反转打印链表

@@ -1,4 +1,4 @@
-package vo;
+package vo.singly;
 
 import java.util.List;
 
