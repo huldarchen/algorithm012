@@ -44,7 +44,7 @@
 // 👍 833 👎 0
 
 
-package leetcode.editor.cn;
+package medium;
 
 public class NumberOfIslands {
     public static void main(String[] args) {
