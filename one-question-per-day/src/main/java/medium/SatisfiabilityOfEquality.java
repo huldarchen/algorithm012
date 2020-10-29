@@ -32,7 +32,7 @@ public class SatisfiabilityOfEquality {
         return true;
     }
 
-    private class UnionFind {
+    private static class UnionFind {
         private int[] parent;
 
         public UnionFind(int n) {
