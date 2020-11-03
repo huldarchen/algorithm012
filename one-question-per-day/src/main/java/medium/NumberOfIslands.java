@@ -47,54 +47,46 @@
 package medium;
 
 public class NumberOfIslands {
-    public static void main(String[] args) {
-        Solution solution = new NumberOfIslands().new Solution();
-    }
+    private int[][] dics = new int[][]{
+            {0, 1}, {1, 0},
+            {0, -1}, {-1, 0}
+    };
 
-    //leetcode submit region begin(Prohibit modification and deletion)
-    class Solution {
-        private int[][] dics = new int[][]{
-                {0, 1}, {1, 0},
-                {0, -1}, {-1, 0}
-        };
+    public int numIslands(char[][] grid) {
+        if (grid == null) {
+            return 0;
+        }
+        int rowLength = grid.length;
+        if (rowLength == 0) {
+            return 0;
+        }
 
-        public int numIslands(char[][] grid) {
-            if (grid == null) {
-                return 0;
-            }
-            int rowLength = grid.length;
-            if (rowLength == 0) {
-                return 0;
-            }
+        int colLength = grid[0].length;
+        int count = 0;
 
-            int colLength = grid[0].length;
-            int count = 0;
-
-            for (int row = 0; row < rowLength; row++) {
-                for (int col = 0; col < colLength; col++) {
-                    if (grid[row][col] == '1') {
-                        dfsMarking(grid, row, col);
-                        count++;
-                    }
+        for (int row = 0; row < rowLength; row++) {
+            for (int col = 0; col < colLength; col++) {
+                if (grid[row][col] == '1') {
+                    dfsMarking(grid, row, col);
+                    count++;
                 }
             }
-
-            return count;
-
-
         }
 
-        private void dfsMarking(char[][] grid, int row, int col) {
-            if (row < 0 || row >= grid.length || col < 0 || col >= grid[0].length || grid[row][col] != '1') {
-                return;
-            }
+        return count;
+
+
+    }
+
+    private void dfsMarking(char[][] grid, int row, int col) {
+        if (row < 0 || row >= grid.length || col < 0 || col >= grid[0].length || grid[row][col] != '1') {
+            return;
+        }
+        grid[row][col] = '0';
+        for (int[] dic : dics) {
+            dfsMarking(grid, row + dic[0], col + dic[1]);
             grid[row][col] = '0';
-            for (int[] dic : dics) {
-                dfsMarking(grid, row + dic[0], col + dic[1]);
-                grid[row][col] = '0';
-            }
         }
     }
-//leetcode submit region end(Prohibit modification and deletion)
-
 }
+

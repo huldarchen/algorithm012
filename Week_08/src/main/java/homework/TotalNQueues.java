@@ -35,7 +35,7 @@ public class TotalNQueues {
             return;
         }
         for (int i = 0; i < totalQueens; i++) {
-            if (cols.contains(i) || pie.contains(rowNum + i) || na.contains(rowNum - i)) {
+            if (cols.contains(rowNum) || pie.contains(rowNum + i) || na.contains(rowNum - i)) {
                 continue;
             }
             char[] chars = new char[totalQueens];
